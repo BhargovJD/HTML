@@ -11,7 +11,7 @@
 <body>
 
     <h1>Main Heading</h1>
-
+    <hr>
     <p>The is a <b>paragraph</b> (Gallus gallus domesticus), a subspecies of the red junglefowl, is a type of
         domesticated fowl, originally from Southeastern Asia. Rooster or cock is a term for an adult male bird, and
         younger male may be called a cockerel. A male that has been castrated is a capon. An adult female bird is called
@@ -45,6 +45,231 @@
     <p><img src="pictures/dp.jpg" alt="dp picture" width="200" height="200"></p>
 
     <!-- Comments -->
+
+    <h2>DIV ELEMENT-BLOCK ELEMENT</h2>
+    <div>
+        <p><img src="pictures/dp.jpg" alt="dp picture" width="200" height="200"></p>
+    </div>
+
+    <h2>SPAN ELEMENT-INLINE ELEMENT</h2>
+    <h3>My name is <span style="color: red;">Bhargov</span> </h3>
+
+    <hr>
+    <p>hi my name is <br> Bhargov</p>
+
+    <p>2<sup>2</sup></p>
+    <p>C<sub>8</sub></p>
+    <h1><sup>1</sup>/<sub>2</sub></h1>
+
+    <h2>HTML ENTITIES</h2>
+    <!-- https://entitycode.com/ -->
+    <h2>&reg;</h2>
+
+    <hr>
+    <h1>Semantic Markup</h1>
+    <!--  meaningful div element eg. <header></header> <nav></nav> etc. works same as div -->
+    <header>Header</header>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <main>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita minus beatae rerum, dicta quis ratione omnis
+        soluta officia cupiditate quos, cumque, magni ipsam exercitationem dignissimos error nobis fuga fugit vero.
+        <section>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In culpa iste dolorum animi at eveniet labore,
+                quibusdam ex aliquid cumque, nobis modi! Ab sed quod iste ullam blanditiis corporis doloremque?</p>
+        </section>
+        <article> Reusable Content::::Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, pariatur neque
+            corporis ipsum
+            ducimus quo ut consectetur aut consequatur eos harum dignissimos. Possimus laborum, non odit fugit quae
+            pariatur reprehenderit!</article>
+
+        <aside>Sidebar</aside>
+        <footer>Footer</footer>
+
+        <figure>Figure</figure>
+        <hr>
+
+        <h1>Table 1</h1>
+
+        <table border="1">
+            <caption>Students</caption>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll no.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Bhargov</th>
+                    <td>03</td>
+                </tr>
+                <tr>
+                    <th>Ashish</th>
+                    <td>02</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h1>Table 2</h1>
+
+        <table border="1">
+            <caption>Students</caption>
+
+            <thead>
+                <tr>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2">Full name</th>
+                    <th rowspan="2">Roll no.</th>
+                </tr>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Bhargov</th>
+                    <td>Bhargov</td>
+                    <td>Das</td>
+                    <td>03</td>
+                </tr>
+                <tr>
+                    <th>Ashish</th>
+                    <td>Ashish</td>
+                    <td>Agarwal</td>
+                    <td>02</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h1>Form Demo</h1>
+        <form action="/">
+            <!-- different input types -->
+            <p><label for="username">Enter a Username</label>
+                <input type="text" placeholder="username" name="username" id="username"></p>
+
+            <p><label for="password">Enter a Password</label>
+                <input type="password" placeholder="password" name="password" id="password"></p>
+
+            <p><label for="color">choose a Color</label>
+                <input type="color" placeholder="color" name="color" id="color"></p>
+
+            <p><label for="number">Select a number</label>
+                <input type="number" placeholder="number" name="number" id="number" min="18" max="50"></p>
+
+            <p><label for="time">Pick a time</label>
+                <input type="time" placeholder="time" name="time" id="time"></p>
+
+            <!-- <button type="button">Submit</button> -->
+            <button>Submit</button>
+
+        </form>
+        <hr>
+        <!-- https://www.reddit.com/search/?q=dog -->
+        <form action="https://www.reddit.com/search/">
+            <input type="text" name="q">
+            <button>Search Reddit</button>
+        </form>
+
+        <h2>More inputs</h2>
+        <form action="">
+            <input type="checkbox" name="agreement" id="agree" checked>
+            <label for="agree">I agree</label>
+            <button>Submit</button>
+        </form>
+        <hr>
+        <h2>Multiple Checkbox</h2>
+        <form action="">
+            <label for="XS">XS:</label>
+            <p><input type="radio" name="size" id="XS" value="XS"></p>
+            <label for="L">L:</label>
+            <p><input type="radio" name="size" id="L" value="L"></p>
+            <label for="M">M:</label>
+            <p><input type="radio" name="size" id="M" value="M"></p>
+            <button>Submit</button>
+        </form>
+        <hr>
+        <form action="">
+            <select name="meal" id="meal">
+                <option value="Fish" selected>Fish</option>
+                <option value="Veg">Vegetarian</option>
+            </select>
+            <button>Submit</button>
+        </form>
+
+        <hr>
+        <h1>Range </h1>
+
+        <form action="">
+            <label for="level">Secect Level</label>
+            <input type="range" id="level" min="1" max="100" name="Level_Selector">
+            <button>Submit</button>
+        </form>
+        <hr>
+        <h2>Textarea</h2>
+        <form action=""><label for="requests"> Any Special Request</label>
+            <textarea id="requests" rows="5" cols="10" name="requests" placeholder="Type Something"></textarea>
+            <button>Submit</button></form>
+        <hr>
+
+        <h2>Validation</h2>
+        <form action="">
+            <label for="Fname">Enter name</label>
+            <input type="text" name="Fname" id="Fname" required>
+
+            <label for="Username">Username</label>
+            <input type="text" id="Username" name="Username" minlength="5" maxlength="10">
+            <button>Submit</button>
+        </form>
+        <hr>
+        <h2>Form Excercise</h2>
+        <h2>Race Registration!</h2>
+        <form action="">
+            <div><label for="first">First name</label>
+                <input type="text" id="first" name="firstname" required>
+
+                <label for="last">Last name</label>
+                <input type="text" id="last" name="lastname" required></div>
+
+            <p>Select a race</p>
+            <div><label for="funrun">Fun Run</label>
+                <input type="radio" id="funrun" name="race" value="fun">
+            </div>
+            <div><label for="halfmarathaon">Half Marathaon</label>
+                <input type="radio" id="halfmarathaon" name="race" value="half"></div>
+
+            <div><label for="fullmarathaon">Full Marathaon</label>
+                <input type="radio" id="fullmarathaon" name="race" value="full"></div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" required>
+            </div>
+
+            <div>
+                <label for="division">Select age</label>
+                <select name="division" id="division">
+                    <option value="kids">under 18</option>
+                    <option value="young">18-04</option>
+                </select>
+            </div>
+
+            <button>Submit</button>
+        </form>
+
+
+    </main>
+
 
 </body>
 
